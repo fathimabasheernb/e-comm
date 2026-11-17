@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Product Details | Roselle</title>
+
+    <link rel="stylesheet" href="view.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <header class="navbar">
+
+        <a href="petal.html" class="logo">
+            <img src="logo.png" alt="Roselle Logo">
+            <span>Roselle</span>
+        </a>
+
+        <nav>
+            <ul>
+                <li><a href="petal.html">HOME</a></li>
+                <li><a href="products.html">PRODUCTS</a></li>
+                <li><a href="petal.html#about">ABOUT</a></li>
+                <li><a href="petal.html#contact">CONTACT</a></li>
+            </ul>
+        </nav>
+
+    </header>
+
+    <section class="details-section">
+
+        <a href="products.html" class="back-btn">
+            ← Back to Collection
+        </a>
+
+        <div class="details-container">
+
+            <div class="details-image">
+                <img id="product-image" src="" alt="Product Image">
+            </div>
+
+            <div class="details-info">
+
+                <p class="category" id="product-category"></p>
+
+                <h1 id="product-name"></h1>
+
+                <h2 id="product-price"></h2>
+
+                <p class="description" id="product-description"></p>
+
+                <div class="quantity-box">
+
+                    <span>Quantity</span>
+
+                    <button type="button" onclick="changeQuantity(-1)">−</button>
+
+                    <span id="quantity">1</span>
+
+                    <button type="button" onclick="changeQuantity(1)">+</button>
+
+                </div>
+
+                <h3 class="total">
+                    Total: ₹<span id="total-price">0</span>
+                </h3>
+
+                <div class="order-form">
+
+                    <h3>Place Your Order</h3>
+
+                    <input type="text" id="customer-name"
+                        placeholder="Your Name" required>
+
+                    <input type="tel" id="customer-phone"
+                        placeholder="Phone Number" required>
+
+                    <textarea id="customer-address"
+                        placeholder="Delivery Address" required></textarea>
+
+                    <button type="button" class="order-btn" onclick="orderProduct()">
+                        Order Now
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <footer>
+        <p>© 2026 Roselle Floral Boutique. All Rights Reserved.</p>
+        <p>Made with love and flowers ♡</p>
+    </footer>
+
+
+    <script src="view.js"></script>
+
+</body>
+
+</html>

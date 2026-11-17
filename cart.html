@@ -1,0 +1,167 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>My Cart | Roselle</title>
+
+    <link rel="stylesheet" href="cart.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+    <nav class="navbar">
+
+        <a href="petal.html" class="logo">
+            <span>❀</span> Roselle
+        </a>
+
+        <div class="nav-links">
+            <a href="petal.html">Home</a>
+            <a href="products.html">Products</a>
+            <a href="cart.html" class="active">Cart</a>
+            <a href="index.html#about">About</a>
+            <a href="index.html#contact">Contact</a>
+        </div>
+
+    </nav>
+
+    <!-- CART HERO -->
+    <section class="cart-hero">
+
+        <p>YOUR FLOWERS, YOUR MOMENTS</p>
+
+        <h1>Your Shopping Bag</h1>
+
+        <span>Every bouquet tells a beautiful story.</span>
+
+    </section>
+
+    <!-- CART SECTION -->
+    <main class="cart-container">
+
+        <div class="cart-heading">
+
+            <div>
+                <p class="small-heading">YOUR SELECTION</p>
+                <h2>Shopping Cart</h2>
+            </div>
+
+            <span id="item-count">0 Items</span>
+
+        </div>
+
+        <div class="cart-layout">
+
+            <!-- CART ITEMS -->
+            <section class="cart-products">
+
+                <div id="cart-items"></div>
+
+                <a href="products.html" class="continue-shopping">
+                    ← Continue Shopping
+                </a>
+
+            </section>
+
+            <!-- ORDER SUMMARY -->
+            <aside class="summary-card">
+
+                <h2>Order Summary</h2>
+
+                <div class="summary-line">
+                    <span>Subtotal</span>
+                    <span id="subtotal">₹0</span>
+                </div>
+
+                <div class="summary-line">
+                    <span>Delivery</span>
+                    <span id="delivery">₹0</span>
+                </div>
+
+                <div class="summary-line total-line">
+                    <span>Total Amount</span>
+                    <span id="total">₹0</span>
+                </div>
+
+                <button id="checkout" class="checkout-btn">
+                    Proceed to Checkout
+                </button>
+
+                <p class="secure-note">
+                    ♡ Made with love, just for you
+                </p>
+
+            </aside>
+
+        </div>
+
+        <!-- CHECKOUT FORM -->
+        <section class="checkout-section" id="checkout-form">
+
+            <div class="checkout-heading">
+                <p class="small-heading">ALMOST THERE</p>
+                <h2>Delivery Details</h2>
+                <p>Please enter your details to place your order.</p>
+            </div>
+
+            <form id="order-form">
+
+                <div class="form-group">
+                    <label for="customer-name">Full Name</label>
+                    <input type="text" id="customer-name"
+                        placeholder="Enter your name" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="customer-phone">Phone Number</label>
+                    <input type="tel" id="customer-phone"
+                        placeholder="Enter your phone number"
+                        pattern="[0-9]{10}" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="customer-address">Delivery Address</label>
+                    <textarea id="customer-address"
+                        placeholder="Enter your complete address"
+                        rows="4" required></textarea>
+                </div>
+
+                <div class="form-group">
+                    <label for="customer-note">Special Instructions</label>
+                    <textarea id="customer-note"
+                        placeholder="Any special message? (Optional)"
+                        rows="3"></textarea>
+                </div>
+
+                <button type="submit" class="place-order-btn">
+                    Place My Order ♡
+                </button>
+
+            </form>
+
+        </section>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+
+        <h2>Roselle</h2>
+
+        <p>Flowers that speak the language of love.</p>
+
+        <span>© 2026 Roselle Floral Boutique. All rights reserved.</span>
+
+    </footer>
+
+    <script src="cart.js"></script>
+
+</body>
+</html>

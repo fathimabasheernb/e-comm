@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Roselle | Floral Boutique</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="petal.css">
+</head>
+
+<body>
+
+    <header class="navbar">
+
+        <div class="logo">
+            <img src="logo.png" alt="Roselle Logo">
+            <h2>Roselle</h2>
+        </div>
+
+        <nav>
+            <ul>
+                <li><a href="#home">HOME</a></li>
+                <li><a href="#products">PRODUCTS</a></li>
+                <li><a href="cart.html">CART</a></li>
+                <li><a href="#about">ABOUT</a></li>
+                <li><a href="#contact">CONTACT</a></li>
+            </ul>
+        </nav>
+
+    </header>
+
+    <section class="hero" id="home">
+
+        <video autoplay muted loop playsinline class="hero-video">
+            <source src="vid.mp4" type="video/mp4">
+        </video>
+
+        <div class="hero-overlay"></div>
+
+        <div class="hero-content">
+
+            <p class="subtitle">WELCOME TO ROSELLE FLORAL BOUTIQUE</p>
+
+            <h1>Flowers That Speak <br>From The Heart.</h1>
+
+            <p class="hero-description">
+                Beautiful blooms, thoughtfully arranged.
+                Make every moment special with our handcrafted bouquets.
+            </p>
+
+            <a href="#products" class="explore-btn">
+                Explore Collection
+            </a>
+
+        </div>
+
+    </section>
+
+    <section class="products" id="products">
+
+        <div class="section-heading">
+
+            <p>OUR COLLECTION</p>
+
+            <h2>Flowers Made With Love</h2>
+
+            <span>
+                Discover our beautiful collection of handcrafted bouquets.
+            </span>
+
+        </div>
+
+
+        <div class="product-container">
+
+            <div class="product-card" onclick="openProduct('products.html')">
+
+                <div class="product-image">
+                    <img src="bo.jpg" alt="Pink Rose Bouquet">
+                </div>
+
+                <div class="product-info">
+                    <h3>Blush Romance</h3>
+                    <p>Elegant pink rose bouquet</p>
+                    <h4>$140</h4>
+                </div>
+
+            </div>
+
+            <div class="product-card" onclick="openProduct('Products.html')">
+
+                <div class="product-image">
+                    <img src="bo1.jpg" alt="White Flower Bouquet">
+                </div>
+
+                <div class="product-info">
+                    <h3>Pure Elegance</h3>
+                    <p>Beautiful white floral arrangement</p>
+                    <h4>$170</h4>
+                </div>
+
+            </div>
+
+            <div class="product-card" onclick="openProduct('Products.html')">
+
+                <div class="product-image">
+                    <img src="bo2.jpg" alt="Mixed Flower Bouquet">
+                </div>
+
+                <div class="product-info">
+                    <h3>Garden Dreams</h3>
+                    <p>Colourful seasonal flower bouquet</p>
+                    <h4>$120</h4>
+                </div>
+
+            </div>
+
+            <div class="product-card" onclick="openProduct('Products.html')">
+
+                <div class="product-image">
+                    <img src="bo3.jpg" alt="Luxury Flower Bouquet">
+                </div>
+
+                <div class="product-info">
+                    <h3>Forever Bloom</h3>
+                    <p>Premium luxury flower bouquet</p>
+                    <h4>$210</h4>
+                </div>
+
+            </div>
+            <a href="products.html" class="view-products-btn">View All Products</a>
+        </div>
+
+    </section>
+
+    <section class="about" id="about">
+
+        <div class="about-image">
+
+            <img src="tu1.jpeg" alt="Beautiful flower arrangement">
+
+        </div>
+
+
+        <div class="about-content">
+
+            <p class="about-subtitle">A LITTLE ABOUT US</p>
+
+            <h2>Every Flower Has A Story To Tell.</h2>
+
+            <p>
+                At Roselle, we believe flowers are more than just beautiful
+                creations. They are a way of expressing love, happiness,
+                gratitude and unforgettable emotions.
+            </p>
+
+            <p>
+                Every bouquet is carefully designed with fresh flowers,
+                thoughtful details and a touch of creativity.
+                Our goal is to make every occasion feel extraordinary.
+            </p>
+
+            <p>
+                From simple gestures to grand celebrations, let our flowers
+                help you create memories that last forever.
+            </p>
+
+            <a href="#contact" class="about-btn">Know More</a>
+
+        </div>
+
+    </section>
+
+    <section class="contact" id="contact">
+
+        <p>LET'S CONNECT</p>
+
+        <h2>Make Someone's Day Bloom.</h2>
+
+        <span>
+            Have something special in mind? We'd love to hear from you.
+        </span>
+
+        <a href="mailto:hello@roselle.com" class="contact-btn">
+            Get In Touch
+        </a>
+
+    </section>
+
+    <footer class="footer" id="footer">
+
+        <div class="footer-container">
+
+            <div class="footer-brand">
+
+                <div class="footer-logo">
+                    <img src="logo.png" alt="Roselle Logo">
+                    <h2>Roselle</h2>
+                </div>
+
+                <p>
+                    Bringing beauty, love and happiness
+                    to every moment, one bouquet at a time.
+                </p>
+
+            </div>
+
+
+            <div class="footer-links">
+
+                <h3>Quick Links</h3>
+
+                <ul>
+                    <li><a href="#home">HOME</a></li>
+                    <li><a href="#products">PRODUCTS</a></li>
+                    <li><a href="cart.html">CART</a></li>
+                    <li><a href="#about">ABOUT</a></li>
+                    <li><a href="#contact">CONTACT</a></li>
+                </ul>
+
+            </div>
+
+
+            <div class="footer-contact">
+
+                <h3>Contact Us</h3>
+
+                <p>Email: hello@roselle.com</p>
+                <p>Phone: +91 98765 43210</p>
+                <p>Instagram: @roselle.flowers</p>
+
+            </div>
+
+        </div>
+
+
+        <div class="footer-bottom">
+
+            <p>
+                © 2026 Roselle Floral Boutique. All Rights Reserved.
+            </p>
+
+            <p>Made with love and flowers ♡</p>
+
+        </div>
+
+    </footer>
+    
+    <script src="petal.js"></script>
+    <script src="cart.js"></script>
+
+</body>
+
+</html>

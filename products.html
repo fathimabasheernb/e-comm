@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Our Collection | Roselle</title>
+
+    <link rel="stylesheet" href="products.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <header class="navbar">
+
+        <a href="petal.html" class="logo">
+            <img src="logo.png" alt="Roselle Logo">
+            <span>Roselle</span>
+        </a>
+
+        <nav>
+            <ul>
+                <li><a href="petal.html">HOME</a></li>
+                <li><a href="products.html" class="active">PRODUCTS</a></li>
+                <li><a href="cart.html" class="cart-link">CART <span id="cart-count">0</span></a></li>
+                <li><a href="petal.html#about">ABOUT</a></li>
+                <li><a href="petal.html#contact">CONTACT</a></li>
+            </ul>
+        </nav>
+
+    </header>
+
+    <section class="page-banner">
+
+        <video autoplay muted loop playsinline class="banner-video">
+            <source src="video.mp4" type="video/mp4">
+        </video>
+
+        <div class="video-overlay"></div>
+
+        <div class="banner-content">
+            <p>DISCOVER OUR COLLECTION</p>
+
+            <h1>Our Beautiful Bouquets</h1>
+
+            <span>
+                Handcrafted with love, designed to make every moment special.
+            </span>
+
+            <a href="#collection" class="explore-btn">Explore Collection</a>
+        </div>
+
+    </section>
+
+    <section class="products-section" id="collection">
+
+        <div class="section-heading">
+            <p>FLOWERS FOR EVERY OCCASION</p>
+            <h2>Find Your Perfect Bouquet</h2>
+            <span>Little bundles of happiness, made just for you.</span>
+        </div>
+
+        <div class="filter-buttons">
+
+            <button class="filter-btn active"
+                onclick="filterProducts('all', this)">
+                All Flowers
+            </button>
+
+            <button class="filter-btn"
+                onclick="filterProducts('roses', this)">
+                Roses
+            </button>
+
+            <button class="filter-btn"
+                onclick="filterProducts('tulips', this)">
+                Tulips
+            </button>
+
+            <button class="filter-btn"
+                onclick="filterProducts('mixed', this)">
+                Mixed Flowers
+            </button>
+
+        </div>
+
+        <div class="product-container">
+
+            <div class="product-card" data-category="roses">
+
+                <div class="product-image">
+                    <img src="pro.jpg" alt="Blush Romance Bouquet">
+                    <span class="product-tag">BEST SELLER</span>
+                </div>
+
+                <div class="product-info">
+                    <span class="product-category">ROSE COLLECTION</span>
+                    <h3>Blush Romance</h3>
+                    <p>Elegant pink and red rose bouquet wrapped with love.</p>
+
+                    <div class="price-row">
+                    <h4>₹140</h4>
+                    <a href="view.html?id=1" class="view-btn">View</a>
+                    <button type="button" class="cart-btn">Add to Cart</button>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="product-card" data-category="roses">
+
+                <div class="product-image">
+                    <img src="pro2.jpg" alt="Pure Elegance Bouquet">
+                </div>
+
+                <div class="product-info">
+                    <span class="product-category">ROSE COLLECTION</span>
+                    <h3>Pure Elegance</h3>
+                    <p>Beautiful red roses for your special moments.</p>
+
+                    <div class="price-row">
+                    <h4>₹170</h4>
+                    <a href="view.html?id=2" class="view-btn">View</a>
+                    <button type="button" class="cart-btn">Add to Cart</button>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="product-card" data-category="mixed">
+
+                <div class="product-image">
+                    <img src="bo4.jpg" alt="Garden Dreams Bouquet">
+                </div>
+
+                <div class="product-info">
+                    <span class="product-category">MIXED COLLECTION</span>
+                    <h3>Garden Dreams</h3>
+                    <p>A colourful collection of fresh seasonal flowers.</p>
+
+                    <div class="price-row">
+                    <h4>₹120</h4>
+                    <a href="view.html?id=3" class="view-btn">View</a>
+                    <button type="button" class="cart-btn">Add to Cart</button>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="product-card" data-category="tulips">
+
+                <div class="product-image">
+                    <img src="tu.jpg" alt="Forever Bloom Bouquet">
+                </div>
+
+                <div class="product-info">
+                    <span class="product-category">TULIP COLLECTION</span>
+                    <h3>Forever Bloom</h3>
+                    <p>Premium tulips arranged beautifully for your loved ones.</p>
+
+                    <div class="price-row">
+                    <h4>₹219</h4>
+                    <a href="view.html?id=4" class="view-btn">View</a>
+                    <button type="button" class="cart-btn">Add to Cart</button>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="product-card" data-category="roses">
+
+                <div class="product-image">
+                    <img src="bo2.jpg" alt="Sweet Blush Bouquet">
+                </div>
+
+                <div class="product-info">
+                    <span class="product-category">ROSE COLLECTION</span>
+                    <h3>Sweet Blush</h3>
+                    <p>Soft pink roses with elegant floral wrapping.</p>
+
+                    <div class="price-row">
+                    <h4>₹159</h4>
+                    <a href="view.html?id=5" class="view-btn">View</a>
+                    <button type="button" class="cart-btn">Add to Cart</button>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="product-card" data-category="tulips">
+
+                <div class="product-image">
+                    <img src="tu1.jpeg" alt="Spring Love Bouquet">
+                </div>
+
+                <div class="product-info">
+                    <span class="product-category">TULIP COLLECTION</span>
+                    <h3>Spring Love</h3>
+                    <p>Fresh tulips to brighten someone's day and make it special.</p>
+
+                    <div class="price-row">
+                    <h4>₹189</h4>
+                    <a href="view.html?id=6" class="view-btn">View</a>
+                    <button type="button" class="cart-btn">Add to Cart</button>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="product-card" data-category="mixed">
+
+                <div class="product-image">
+                    <img src="sea.jpg" alt="Dreamy Garden Bouquet">
+                </div>
+
+                <div class="product-info">
+                    <span class="product-category">MIXED COLLECTION</span>
+                    <h3>Dreamy Garden</h3>
+                    <p>A dreamy mix of beautiful seasonal blooms.</p>
+
+                    <div class="price-row">
+                    <h4>₹169</h4>
+                    <a href="view.html?id=7" class="view-btn">View</a>
+                    <button type="button" class="cart-btn">Add to Cart</button>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="product-card" data-category="roses">
+
+                <div class="product-image">
+                    <img src="red.jpg" alt="Rose Paradise Bouquet">
+                    <span class="product-tag">LUXURY PICK</span>
+                </div>
+
+                <div class="product-info">
+                    <span class="product-category">ROSE COLLECTION</span>
+                    <h3>Rose Paradise</h3>
+                    <p>A luxurious arrangement of classic red roses.</p>
+
+                    <div class="price-row">
+                    <h4>₹249</h4>
+                    <a href="view.html?id=8" class="view-btn">View</a>
+                    <button type="button" class="cart-btn">Add to Cart</button>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <footer class="footer">
+
+        <div class="footer-container">
+
+            <div class="footer-brand">
+
+                <div class="footer-logo">
+                    <img src="logo.png" alt="Roselle Logo">
+                    <h2>Roselle</h2>
+                </div>
+
+                <p>
+                    Bringing beauty, love and happiness
+                    to every moment, one bouquet at a time.
+                </p>
+
+            </div>
+
+
+            <div class="footer-links">
+
+                <h3>Quick Links</h3>
+
+                <ul>
+                    <li><a href="petal.html">Home</a></li>
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="cart.html">Cart</a></li>
+                    <li><a href="petal.html#about">About Us</a></li>
+                    <li><a href="petal.html#contact">Contact</a></li>
+                </ul>
+
+            </div>
+
+
+            <div class="footer-contact">
+
+                <h3>Contact Us</h3>
+
+                <p>Email: hello@roselle.com</p>
+                <p>Phone: +91 98765 43210</p>
+                <p>Instagram: @roselle.flowers</p>
+
+            </div>
+
+        </div>
+
+
+        <div class="footer-bottom">
+            <p>© 2026 Roselle Floral Boutique. All Rights Reserved.</p>
+            <p>Made with love and flowers ♡</p>
+        </div>
+
+    </footer>
+
+
+    <script src="products.js"></script>
+
+</body>
+</html>
